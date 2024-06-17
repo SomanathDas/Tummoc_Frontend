@@ -9,32 +9,32 @@ body {
     background-color: #0e2d39;
     color: white;
     text-align: left;
-    padding: 40px 20px;
+    padding: 20px 20px;
     position: relative;
     z-index: 1;
   }
 
   .header h1 {
     margin: 0;
-    top: 15px;
+    top: 10px;
     position: absolute;
-    font-size: 18px;
-    font-weight: 550;
+    font-size: 13px;
+    font-weight: 400;
   }
 
   .header .support {
     position: absolute;
     right: 10px;
-    top: 18px;
-    font-size: 13px;
+    top: 10px;
+    font-size: 11px;
     color: #ffffff;
     text-decoration: underline;
   }
 
   .pass-container {
     background-color: white;
-    margin: -30px 20px 20px 20px;
-    padding: 20px;
+    margin: 15px 15px 15px 15px;
+    padding: 15px 20px 10px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -45,33 +45,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
     margin-bottom: 10px;
   }
 
   .pass-header img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    margin-left: -5px;
   }
 
   .pass-header .pass-details {
     flex-grow: 1;
     text-align: left;
-    margin-left: 15px;
+    margin-left: 20px;
   }
 
   .pass-header .pass-details h2 {
-    margin: 0;
+    margin-top: -5px;
+    margin-bottom: 5px;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
     color: #333;
   }
 
   .pass-header .pass-details .tag {
     display: inline-block;
-    padding: 2px 6px;
+    padding: 4px 8px;
     border-radius: 4px;
     margin-right: 5px;
     color: white;
@@ -79,14 +81,15 @@ body {
   }
 
   .pass-header .pass-details .day {
-    background-color: #ffeb3b75;
-    color: #9f5500;
+    background-color: #00ff6a34;
+    color: rgb(0, 135, 68);
     font-weight: 500;
+    margin-top: 0px;
   }
 
   .pass-header .pass-details .ordinary {
-    background-color: #00ff6a30;
-    color: rgb(3, 155, 79);
+    background-color: #4f4f4f21;
+    color: rgb(0, 0, 0);
     font-weight: 500;
   }
 
@@ -95,56 +98,88 @@ body {
     font-size: 14px;
     color: #333;
     flex-direction: column;
+    border-bottom-style: dashed;
+    border: #292929;
+  }
+
+  .pass-container .pass-id p {
+    font-size: 11px;
+    margin-left: -5px;
   }
 
   .pass-number {
     font-weight: 550;
-    margin-left: 5px;
+    margin-left: 25px;
   }
 
   .qr-section {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
   }
 
   .qr-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
   }
 
   .qr-container img {
-    height: 50px;
-    border-radius: 5px;
-    z-index: 1;
+    height: 20px;
+    margin-top: -2px;
+    display: block;
   }
 
+  .qr-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-container img {
+    display: block;
+    margin-right: 10px;
+    margin-left: 110px;
+}
+
   .qr-container .validate-btn {
-    display: inline-block;
-    height: 50px;
-    width: 350px;
-    line-height: 50px;
-    padding: 0 20px;
-    color: rgb(0, 0, 0);
-    background-color: #66ff4733;
-    border-radius: 0 7px 7px 0;
+    display: inline-flex;
+    height: 25px;
+    width: 300px;
+    padding-top: 12px;
+    padding-bottom: -12px;
+    color: rgb(255, 255, 255);
+    background-color: #26849f;
+    border-radius: 7px 7px 7px 7px;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: -20px;
-    z-index: 0;
+    font-size: 11px;
+  }
+  .pass-container .how-to-validate {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 43px;
+    text-decoration: none;
+    color: #26849f;
+  }
+
+  .how-to-validate .info-logo {
+    height: 20px;
+    margin-bottom: -5px;
+    margin-right: 5px;
   }
 
   .booking-details-container {
-    margin: 20px;
+    margin: 15px;
   }
 
   .booking-details {
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .booking-details h3 {
+    font-weight: 550;
   }
 
   .passenger-info {
@@ -162,23 +197,16 @@ body {
   }
 
   .passenger-details .label {
-    font-size: 13px;
-    color: #333;
-    margin-bottom: -10px;
-  }
-
-  .passenger-details .mid-info {
-    font-size: 14.5px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: -10px;
+    font-size: 10px;
+    color: #333333;
+    margin-bottom: -11px;
   }
 
   .passenger-details .info {
-    margin-bottom: -5px;
-    font-size: 14.5px;
-    font-weight: bold;
-    color: #555;
+    margin-bottom: -13px;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #151515;
   }
 
   .passenger-avatar-container {
@@ -188,8 +216,7 @@ body {
   }
 
   .passenger-avatar {
-    width: 60px;
-    height: 60px;
+    height: 85px;
     border-radius: 50%;
     margin-top: 10px;
   }
@@ -205,12 +232,19 @@ body {
     margin-top: 0;
     font-size: 16px;
     color: #333;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
   }
 
   .divider {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #777575;
+    border-color: #dfdfdf;
     margin: 5px 0;
+    border-style: dashed;
+    border-width: 1px;
+  }
+
+  .booking-details .passenger-info {
+    margin-top: -7px;
   }
 
   .pass-validity {
@@ -240,40 +274,52 @@ body {
     color: #555;
   }
 
+  .pass-fare {
+    margin-right: -25px;
+  }
+
   .pass-fare .label {
-    font-size: 14px;
+    font-size: 11px;
     text-decoration: underline;
+    text-decoration-thickness: 0rem;
     color: #333;
-    margin-top: 50px;
-    margin-bottom: -25px;
+    margin-top: 80px;
+    margin-bottom: -15px;
   }
 
   .pass-fare .info {
-    margin-bottom: 8px;
-    font-size: 28px;
+    font-size: 19px;
     font-weight: 500;
     color: #555;
+    margin-bottom: 5px;
+  }
+
+  .booking-details .validate-btn {
+    border: 1px #26849f;
+    background-color: #ffffff;
+    color: hsl(193, 61%, 39%);
+    padding: 8px 1px;
+    font-size: 11px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 170px;
+    border-style: solid;
+    margin: 10px 50px 10px 65px;
+  }
+
+  .validate-btn .mail-img {
+    height: 15px;
+    margin-bottom: -3px;
+    margin-right: 3px;
   }
 
   .last-validated-bus-route {
-    display: flex;
-    margin-left: -7px;
-    margin-right: -10px;
     justify-content: space-between;
     background-color: #88ff0028;
-  }
-
-  .last-validated,
-  .bus-number,
-  .route-number {
-    flex: 1;
-    margin-right: 5px;
-  }
-
-  .last-validated:last-child,
-  .bus-number:last-child,
-  .route-number:last-child {
-    margin-right: 0;
+    border-radius: 5px;
+    padding: 5px 5px 15px 10px;
+    margin-top: 10px;
   }
 
   .last-validated .group,
@@ -284,18 +330,18 @@ body {
 
   .last-validated .label,
   .bus-number .label,
-  .route-number .label {
-    font-size: 11px;
+  .validated-by .label {
+    font-size: 10.5px;
     color: #333;
-    margin-bottom: -10px;
+    margin-bottom: -9px;
   }
 
   .last-validated .info,
   .bus-number .info,
-  .route-number .info {
-    margin-bottom: 10px;
-    font-size: 11px;
-    font-weight: bold;
+  .validated-by .info {
+    margin-bottom: -4px;
+    font-size: 11.5px;
+    font-weight: 550;
     color: #555;
   }
 

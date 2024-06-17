@@ -26,16 +26,25 @@
                 <span class="tag day">Daily</span>
                 <span class="tag ordinary">Ordinary</span>
             </div>
-            <div class="pass-id">
-                <p>Pass ID: <span class="pass-number">TEHDI274784</span></p>
-            </div>
         </div>
+        
     </div>
+    <div class="pass-id">
+        <p>Pass ID: <span class="pass-number">TEHDI274784</span></p>
+        <div class="divider"></div>
+    </div>
+    
     <div class="qr-section">
         <div class="qr-container">
-            <img src="/output-onlinepngtools%20(2).png" alt="QR Code" />
-            <a href="#" class="validate-btn" onclick="openQRScanner()">Scan QR</a>
+            <a href="#" class="validate-btn" onclick="openQRScanner()">
+                <img src="/output-onlinepngtools (1).png" alt="QR Code" />
+                Scan QR</a>
         </div>
+    </div>
+    <div>
+        <a href="#" class="how-to-validate">
+            <img  class="info-logo" src="/info.png" alt="info">
+            How to Validate Your Pass?</a>
     </div>
 </div>
 
@@ -51,63 +60,67 @@
                 </div>
                 <div class="group">
                     <p class="label">Identification type</p>
-                    <p class="mid-info" id="identificationType">Aadhar Card</p>
+                    <p class="info" id="identificationType">Aadhar Card</p>
                 </div>
                 <div class="group">
                     <p class="label">Identification number(Last 4 digits)</p>
-                    <p class="mid-info" id="identificationNumber">6661</p>
+                    <p class="info" id="identificationNumber">6661</p>
                 </div>
                 <div class="group">
                     <p class="label">Pass purchased date</p>
-                    <p class="info" id="passPurchased"></p>
+                    <p class="info" id="passPurchased">16 Jun 2024, 10:35 AM</p>
+                </div>
+                <div class="group">
+                    <p class="label">Pass valid from</p>
+                    <p class="info" id="passValidFrom">16 Jun 2024, 12:00 AM</p>
+                </div>
+                <div class="group">
+                    <p class="label">Pass valid till</p>
+                    <p class="info" id="passValidTill">16 Jun 2024, 11:59 PM</p>
                 </div>
             </div>
             <div class="passenger-avatar-container">
                 <img src="/avatar-round-3-1.png" class="passenger-avatar" alt="Passenger Avatar" id="passengerAvatar" />
-                <img src="/tummoc%20bird%202%20(1).png" class="additional-logo"
-                     alt="Additional Logo" />
+                <div class="pass-fare">
+                    <p class="label">Pass Fare</p>
+                    <p class="info" id="passFare">$70.0</p>
+                </div>
             </div>
         </div>
         <div class="divider"></div>
-        <div class="pass-validity">
-            <div class="validity-details">
-                <div class="group">
-                    <p class="label">Pass Valid From</p>
-                    <p class="info" id="passValidFrom"></p>
-                </div>
-                <div class="group">
-                    <p class="label">Pass Valid Till</p>
-                    <p class="info" id="passValidTill"></p>
-                </div>
-            </div>
-            <div class="pass-fare">
-                <p class="label">Pass Fare</p>
-                <p class="info" id="passFare"></p>
-            </div>
+        <div>
+            <button class="validate-btn">
+                <img  class="mail-img" src="/icons8-email-open-50.png" alt="Mail">
+                Generate mail receipt</button>
         </div>
         <div class="divider"></div>
         <div class="last-validated-bus-route">
             <div class="last-validated">
                 <div class="group">
                     <p class="label">Last Validated</p>
-                    <p id="lastValidatedInfo" class="info"></p>
+                    <p id="lastValidatedInfo" class="info">16 Jun 2024, 06:58 PM</p>
                 </div>
             </div>
             <div class="bus-number">
                 <div class="group">
                     <p class="label">Bus Number</p>
-                    <p id="busNumberInfo" class="info"></p>
+                    <p id="busNumberInfo" class="info">BMTC BUS KA57F4727</p>
                 </div>
             </div>
-            <div class="route-number">
+            <div class="validated-by">
                 <div class="group">
-                    <p class="label">Route Number</p>
-                    <p class="info">500D</p>
+                    <p class="label">Validated By</p>
+                    <p id="validatedBy" class="info">Self</p>
                 </div>
             </div>
         </div>
+        <div class="divider"></div>
+
     </div>
 </div>
+</div>
+<div class="booking-details-container">
+    <p>jgjjkk</p>
 </div>
 </body>
 </html>
