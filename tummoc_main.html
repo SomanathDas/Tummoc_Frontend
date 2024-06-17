@@ -13,7 +13,7 @@
 
 <body>
 <div class="header">
-    <h1>Your Tummoc Pass</h1>
+    <h1>Your Bus Pass</h1>
     <a href="#" class="support">Support</a>
 </div>
 
@@ -23,7 +23,7 @@
         <div class="pass-details">
             <h2>Ordinary Day Pass</h2>
             <div>
-                <span class="tag day">Day</span>
+                <span class="tag day">Daily</span>
                 <span class="tag ordinary">Ordinary</span>
             </div>
             <div class="pass-id">
@@ -34,7 +34,7 @@
     <div class="qr-section">
         <div class="qr-container">
             <img src="/output-onlinepngtools%20(2).png" alt="QR Code" />
-            <a href="#" class="validate-btn" onclick="openQRScanner()">Scan QR to Validate</a>
+            <a href="#" class="validate-btn" onclick="openQRScanner()">Scan QR</a>
         </div>
     </div>
 </div>
@@ -42,19 +42,23 @@
 <div class="booking-details-container">
     <div class="booking-details">
         <h3>Booking Details</h3>
+        <div class="divider"></div>
         <div class="passenger-info">
             <div class="passenger-details">
                 <div class="group">
                     <p class="label">Passenger Name</p>
-                    <p class="info" id="passengerName"></p>
+                    <p class="info" id="passengerName">Somanath Das</p>
                 </div>
                 <div class="group">
-                    <p class="label">Identification Type</p>
-                    <p class="mid-info" id="identificationType"></p>
-                    <p class="info" id="identificationNumber"></p>
+                    <p class="label">Identification type</p>
+                    <p class="mid-info" id="identificationType">Aadhar Card</p>
                 </div>
                 <div class="group">
-                    <p class="label">Pass Purchased</p>
+                    <p class="label">Identification number(Last 4 digits)</p>
+                    <p class="mid-info" id="identificationNumber">6661</p>
+                </div>
+                <div class="group">
+                    <p class="label">Pass purchased date</p>
                     <p class="info" id="passPurchased"></p>
                 </div>
             </div>
