@@ -4,47 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Tummoc Pass</title>
-    <link rel="icon" type="image/x-icon" href="/tummoc_icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet" />
-    <link rel="stylesheet" href="/tummoc_main_style.css" />
+    <link rel="stylesheet" href="CSS/tummoc_main_style.css" />
     <script src="https://unpkg.com/html5-qrcode"></script>
 </head>
 
 <body>
 <div class="header">
-    <h1>Your Bus Pass</h1>
+    <h1>Your Tummoc Pass</h1>
     <a href="#" class="support">Support</a>
 </div>
 
 <div class="pass-container">
     <div class="pass-header">
-        <img src="/bmtc%20logo.jfif" alt="BMTC Logo" />
+        <img src="/static/image/bmtc%20logo.jfif" alt="BMTC Logo" />
         <div class="pass-details">
             <h2>Ordinary Day Pass</h2>
             <div>
-                <span class="tag day">Daily</span>
+                <span class="tag day">Day</span>
                 <span class="tag ordinary">Ordinary</span>
             </div>
         </div>
-        
     </div>
     <div class="pass-id">
         <p>Pass ID: <span class="pass-number">TEHDI274784</span></p>
         <div class="divider"></div>
     </div>
-    
     <div class="qr-section">
         <div class="qr-container">
             <a href="#" class="validate-btn" onclick="openQRScanner()">
-                <img src="/output-onlinepngtools (1).png" alt="QR Code" />
-                Scan QR</a>
+                <img src="/static/image/QR-logo.png" alt="QR Code" />
+                Scan QR to Validate</a>
         </div>
-    </div>
-    <div>
-        <a href="#" class="how-to-validate">
-            <img  class="info-logo" src="/info.png" alt="info">
-            How to Validate Your Pass?</a>
     </div>
 </div>
 
@@ -80,7 +72,7 @@
                 </div>
             </div>
             <div class="passenger-avatar-container">
-                <img src="/avatar-round-3-1.png" class="passenger-avatar" alt="Passenger Avatar" id="passengerAvatar" />
+                <img src="/static/image/avatar-round.png" class="passenger-avatar" alt="Passenger Avatar" id="passengerAvatar" />
                 <div class="pass-fare">
                     <p class="label">Pass Fare</p>
                     <p class="info" id="passFare">$70.0</p>
@@ -90,7 +82,7 @@
         <div class="divider"></div>
         <div class="generate-mail-btn">
             <button class="validate-btn">
-                <img  class="mail-img" src="/icons8-email-open-50.png" alt="Mail">
+                <img  class="mail-img" src="/static/image/email-open.png" alt="Mail">
                 Generate mail receipt</button>
         </div>
         <div class="divider"></div>
@@ -115,27 +107,13 @@
             </div>
         </div>
         <div class="divider"></div>
-        <div class="random-qr">
-            <img src="/qrcode.png" alt="QR"/>
-        </div>
+
     </div>
 </div>
 </div>
-<div class="dropdown-container">
-    <div class="dropdown">
-        <button onclick="toggleDropdown()" class="dropbtn">Term and Conditions</button>
-        <div id="myDropdown" class="dropdown-content">
-            <p>Pass is valid for travel for the services it has been purchased and until the expiry date printed on the pass</p>
-            <p>In case the conductor asks for your ID proof, you can either show a physical/digital copy of the ID used at the time of booking.</p>
-            <p>Only one pass is allowed for one ID card</p>
-            <p>Pass holders must show their passes to conductors or any authorised person on demand</p>
-            <p>Improper/misuse of past results in withdrawal of pass attract penalty and pass holder will be liable to legal implications</p>
-            <p>BMTC is not responsible if passenger/pass holder's mobile application is not working or switched off</p>
-            <p>BMTC is not responsible if passenger/pass holder has entered wrong ID number in mobile pass purchased and the same cannot be accepted</p>
-            <p>Pass holders should abide by and accept the conditions on which the pass is issued</p>
-            <p>It is not required to carry BMTC ID card for pass holders who have purchased a digital pass</p>
-        </div>
-    </div>
+<div class="booking-details-container">
+    <p>jgjjkk</p>
 </div>
+<script src="JS/tummoc_main_JS.js"></script>
 </body>
 </html>
