@@ -28,7 +28,7 @@ body {
     top: 10px;
     font-size: 11px;
     color: #ffffff;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .pass-container {
@@ -81,8 +81,8 @@ body {
   }
 
   .pass-header .pass-details .day {
-    background-color: #0087341f;
-    color: rgb(0, 123, 18);
+    background-color: #E8F1D7;
+    color: #64911A;
     font-weight: 500;
     margin-top: 0px;
   }
@@ -104,7 +104,7 @@ body {
 
   .pass-container .pass-id p {
     font-size: 11px;
-    margin-left: -5px;
+    margin-left: -2px;
   }
 
   .pass-number {
@@ -117,38 +117,28 @@ body {
     justify-content: center;
     align-items: center;
     margin: 10px;
+    margin-left: -10px;
   }
 
   .qr-container {
-    text-align: center;
+    width: 100%;
+    max-width: 310px;
   }
 
   .qr-container img {
     height: 20px;
-    margin-top: -2px;
-    display: block;
+    margin-right: 10px;
   }
 
-  .qr-section {
+  .validate-btn {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.qr-container img {
-    display: block;
-    margin-right: 10px;
-    margin-left: 125px;
-}
-
-  .qr-container .validate-btn {
-    display: inline-flex;
+    justify-content: center;
     height: 25px;
-    width: 330px;
-    padding-top: 12px;
-    padding-bottom: -12px;
+    width: 100%;
+    padding: 8px 10px 5px 10px;
     color: rgb(255, 255, 255);
-    background-color: #26849f;
+    background-color: #0DBDC4;
     border-radius: 7px 7px 7px 7px;
     text-decoration: none;
     font-size: 11px;
@@ -156,14 +146,15 @@ body {
   .pass-container .how-to-validate {
     font-size: 13px;
     font-weight: 500;
-    margin-left: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    color: #26849f;
+    color: #0bb1b6;
   }
 
   .how-to-validate .info-logo {
     height: 20px;
-    margin-bottom: -5px;
     margin-right: 5px;
   }
 
@@ -294,32 +285,39 @@ body {
     margin-bottom: 5px;
   }
 
+  .generate-mail-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .booking-details .validate-btn {
-    border: 1px #26849f;
+    border: 1px #0DBDC4;
     background-color: #ffffff;
-    color: hsl(193, 61%, 39%);
-    padding: 8px 1px;
+    color: #0DBDC4;
+    padding: 15px 1px;
     font-size: 11px;
     font-family: "Montserrat", Arial, sans-serif;
     font-weight: 500;
     border-radius: 5px;
     width: 170px;
     border-style: solid;
-    margin: 10px 20% 10px 85px;
+    margin: 10px 0px 10px 0px;
   }
 
   .validate-btn .mail-img {
     height: 15px;
-    margin-bottom: -3px;
-    margin-right: 3px;
+    margin-bottom: 1px;
+    margin-right: 4px;
   }
 
   .last-validated-bus-route {
     justify-content: space-between;
-    background-color: #88ff0028;
+    background-color: #E9F1D9;
     border-radius: 5px;
     padding: 5px 5px 15px 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .last-validated .group,
@@ -333,21 +331,92 @@ body {
   .validated-by .label {
     font-size: 10.5px;
     color: #333;
-    margin-bottom: -9px;
+    margin-bottom: -10px;
   }
 
   .last-validated .info,
   .bus-number .info,
   .validated-by .info {
-    margin-bottom: -4px;
-    font-size: 11.5px;
+    margin-bottom: -3px;
+    font-size: 12px;
     font-weight: 550;
     color: #555;
   }
 
-  .last-validated {
-    flex: 1.1;
+  .random-qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 2px;
   }
+
+  .random-qr img{
+    height: 140px;
+  }
+
+  .dropdown-container {
+    margin: 15px;
+  }
+
+  .dropdown {
+    width: 100%; /* Full width */
+}
+.dropbtn {
+    width: 100%; /* Full width */
+    background-color: #0DBDC4;
+    color: white;
+    padding: 14px 25px 14px 25px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Montserrat", Arial, sans-serif;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+.dropbtn:after {
+    content: ' \25BC'; /* Unicode for down arrow */
+    font-size: 13px;
+}
+.dropdown-content {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    width: auto; /* Full width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-size: 10px;
+}
+.dropdown-content p {
+    color: black;
+    margin: 0;
+}
+.dropdown-content p:hover {
+    background-color: #f1f1f1;
+}
+.dropdown-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .dropdown-content ul li {
+            color: black;
+            padding: 5px 10px;
+        }
+        .dropdown-content ul li::marker {
+            color: #0DBDC4; /* Set the bullet color to blue */
+            padding-left: 20px;
+        }
+.show {
+    display: block;
+}
+
 
   /* QR Code Scanner */
   /* Modal Styles */
