@@ -81,8 +81,8 @@ body {
   }
 
   .pass-header .pass-details .day {
-    background-color: #00ff6a34;
-    color: rgb(0, 135, 68);
+    background-color: #0087341f;
+    color: rgb(0, 123, 18);
     font-weight: 500;
     margin-top: 0px;
   }
@@ -138,7 +138,7 @@ body {
 .qr-container img {
     display: block;
     margin-right: 10px;
-    margin-left: 110px;
+    margin-left: 125px;
 }
 
   .qr-container .validate-btn {
@@ -156,7 +156,7 @@ body {
   .pass-container .how-to-validate {
     font-size: 13px;
     font-weight: 500;
-    margin-left: 43px;
+    margin-left: 52px;
     text-decoration: none;
     color: #26849f;
   }
@@ -305,7 +305,7 @@ body {
     border-radius: 5px;
     width: 170px;
     border-style: solid;
-    margin: 10px 50px 10px 65px;
+    margin: 10px 20% 10px 85px;
   }
 
   .validate-btn .mail-img {
